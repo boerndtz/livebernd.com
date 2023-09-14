@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -22,10 +23,14 @@
     padding: 2em;
   }
   .image-container {
-    text-align: center; /* Horizontally center the image */
+    text-align: center;
+  }
+  .image-container img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto; /* Horizontally center the image */
     padding-top: 50px; /* Adjust this value to control vertical centering */
-}
-
+  }
 </style>
 </head>
 <body>
@@ -33,8 +38,8 @@
     <h1>Willkommen auf meiner persönlichen Webseite</h1>
   </header>
  
-  <div>
-    <img src="bernd-married.jpg" alt="Mein Bild" style="max-width: 50%;">
+  <div class="image-container">
+    <img src="bernd-married.jpg" alt="Mein Bild">
   </div>
   
   <div class="container">
